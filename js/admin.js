@@ -3,7 +3,7 @@ const api_path = `qwe1234`;
 let productModal = '';
 let delProductModal = '';
 
-import pagination from '../js/pagination.js';
+import pagination from '/js/pagination.js';
 
 const app = Vue.createApp({
     data() {

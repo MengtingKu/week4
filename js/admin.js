@@ -103,13 +103,6 @@ const app = Vue.createApp({
             return parts.join(".");
         }
     },
-    computed: {
-        // toThousands(x) {
-        //     let parts = x.toString().split(".");
-        //     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        //     return parts.join(".");
-        // }
-    },
     mounted() {
         const token = document.cookie.replace(/(?:(?:^|.*;\s*)tokenId\s*\=\s*([^;]*).*$)|^.*$/, "$1");
         axios.defaults.headers.common.Authorization = token;
